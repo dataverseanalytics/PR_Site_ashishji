@@ -1,0 +1,10 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+<title>AskForPR icon</title>
+<g transform="translate(80,10)">
+<text x="70" y="330" font-family="Liberation Serif, Georgia, serif" font-size="300" font-weight="700" fill="#C9942F">R</text>
+<text x="0" y="330" font-family="Liberation Serif, Georgia, serif" font-size="300" font-weight="700" fill="#0B1F3A">P</text>
+<circle cx="88" cy="185" r="9" fill="#C9942F"/>
+<circle cx="118" cy="185" r="9" fill="#C9942F"/>
+<circle cx="148" cy="185" r="9" fill="#C9942F"/>
+</g>
+</svg>

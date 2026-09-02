@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-deep-navy: #061426;
+  --color-dark-navy: #091A2D;
+  --color-navy-blue: #10243A;
+  --color-gold: #D9A52E;
+  --color-light-gold: #E8B83F;
+  --color-muted-white: #D8DEE7;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@layer base {
+  body {
+    @apply bg-deep-navy text-muted-white font-sans antialiased overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-white;
+  }
+
+  /* One visible focus treatment for every interactive element. */
+  :where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-dark-navy/80 backdrop-blur-md border border-navy-blue rounded-lg shadow-lg;
+  }
+
+  /* Editorial hairline grid. Gives long-form sections underlying structure
+     without resorting to a background photograph. */
+  .rule-grid {
+    background-image:
+      linear-gradient(to right, rgb(255 255 255 / 0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(255 255 255 / 0.035) 1px, transparent 1px);
+    background-size: 88px 88px;
+  }
+
+  /* Hairline table grid: parent draws top/left, children draw bottom/right. */
+  .rule-table {
+    @apply border-t border-l border-white/10;
+  }
+  .rule-table > * {
+    @apply border-b border-r border-white/10;
+  }
+}
+
+/* Custom Selection */
+::selection {
+  @apply bg-gold/30 text-white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-deep-navy;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-navy-blue rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gold/50;
+}
+
+/* Respect the OS-level motion preference across CSS and Framer Motion alike. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
