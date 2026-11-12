@@ -28,7 +28,9 @@ export const TeamSection = () => {
     <section className="py-24 bg-deep-navy relative z-20 overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <img
+          loading="lazy"
+          decoding="async"
           src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1920&auto=format&fit=crop" 
           alt="Team Working Background" 
           className="absolute inset-0 w-full h-full object-cover object-center opacity-20"
@@ -54,7 +56,9 @@ export const TeamSection = () => {
             >
               <div className="overflow-hidden rounded-sm relative aspect-[4/5] mb-6">
                 <div className="absolute inset-0 bg-navy-blue/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-                <img 
+                <img
+                  loading="lazy"
+                  decoding="async"
                   src={member.image} 
                   alt={member.name} 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"

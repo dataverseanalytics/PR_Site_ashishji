@@ -61,6 +61,8 @@ export const TestimonialsSection = () => {
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <img
+          loading="lazy"
+          decoding="async"
           src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1920&auto=format&fit=crop"
           alt="Client Meeting Background"
           className="absolute inset-0 w-full h-full object-cover object-center opacity-15"

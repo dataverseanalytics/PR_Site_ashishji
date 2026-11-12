@@ -24,6 +24,8 @@ export const IndustriesSection = () => {
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <img
+          loading="lazy"
+          decoding="async"
           src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=1920&auto=format&fit=crop"
           alt="City Skyline Background"
           className="absolute inset-0 w-full h-full object-cover object-center opacity-15"

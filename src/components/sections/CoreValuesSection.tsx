@@ -25,7 +25,9 @@ export const CoreValuesSection = () => {
     <section className="py-24 bg-dark-navy relative z-20 border-t border-white/5 overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <img
+          loading="lazy"
+          decoding="async"
           src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1920&auto=format&fit=crop" 
           alt="Core Values Background" 
           className="absolute inset-0 w-full h-full object-cover object-center opacity-20"

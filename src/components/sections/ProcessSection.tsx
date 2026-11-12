@@ -37,7 +37,9 @@ export const ProcessSection = () => {
     <section className="py-24 bg-deep-navy relative overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <img
+          loading="lazy"
+          decoding="async"
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1920&auto=format&fit=crop" 
           alt="Team Process Background" 
           className="absolute inset-0 w-full h-full object-cover object-center opacity-15"

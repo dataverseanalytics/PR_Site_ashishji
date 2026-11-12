@@ -1,3 +1,5 @@
+import { useSeo } from "../hooks/useSeo";
+import { pageSeo } from "../config/seo";
 import { AboutHero } from "../components/about/AboutHero";
 import { VisionMission } from "../components/about/VisionMission";
 import { WhatWeDo } from "../components/about/WhatWeDo";
@@ -9,6 +11,7 @@ import { AboutCTA } from "../components/about/AboutCTA";
 import { StatsSection } from "../components/sections/StatsSection";
 
 export const About = () => {
+  useSeo(pageSeo.about);
   return (
     <div className="bg-deep-navy min-h-screen">
       <AboutHero />

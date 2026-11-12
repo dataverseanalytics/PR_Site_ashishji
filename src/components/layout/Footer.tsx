@@ -12,7 +12,9 @@ export const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center mb-6">
-              <img 
+              <img
+                loading="lazy"
+                decoding="async"
                 src="/ask_for_pr_logo_reverse.svg"
                 alt="Ask For PR"
                 className="h-16 md:h-20 w-auto object-contain"
@@ -59,13 +61,20 @@ export const Footer = () => {
           <div>
             <h4 className="text-white font-serif text-lg mb-6">Quick Links</h4>
             <ul className="flex flex-col gap-3">
-              {["Home", "About Us", "Services", "Contact Us"].map((link) => (
-                <li key={link}>
+              {[
+                { name: "Home", path: "/" },
+                { name: "About Us", path: "/about" },
+                { name: "Services", path: "/services" },
+                { name: "Sectors", path: "/sectors" },
+                { name: "Media Coverage", path: "/media-coverage" },
+                { name: "Contact Us", path: "/contact" },
+              ].map((link) => (
+                <li key={link.path}>
                   <Link
-                    to={link === "Home" ? "/" : `/${link.toLowerCase().replace(" ", "-")}`}
+                    to={link.path}
                     className="text-muted-white hover:text-gold transition-colors text-sm"
                   >
-                    {link}
+                    {link.name}
                   </Link>
                 </li>
               ))}

@@ -1,3 +1,5 @@
+import { useSeo } from "../hooks/useSeo";
+import { pageSeo } from "../config/seo";
 import { ServicesHero } from "../components/services/ServicesHero";
 import { ServiceCatalogue } from "../components/services/ServiceCatalogue";
 import { PressReleaseBenefits } from "../components/services/PressReleaseBenefits";
@@ -5,6 +7,7 @@ import { WhyChooseUs } from "../components/services/WhyChooseUs";
 import { EditorialCTA } from "../components/ui/EditorialCTA";
 
 export const Services = () => {
+  useSeo(pageSeo.services);
   return (
     <div className="bg-deep-navy min-h-screen">
       <ServicesHero />

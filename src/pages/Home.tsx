@@ -1,3 +1,5 @@
+import { useSeo } from "../hooks/useSeo";
+import { pageSeo } from "../config/seo";
 import { HeroSection } from "../components/sections/HeroSection";
 import { TrustIndicators } from "../components/sections/TrustIndicators";
 import { AboutSnippet } from "../components/sections/AboutSnippet";
@@ -8,6 +10,7 @@ import { TestimonialsSection } from "../components/sections/TestimonialsSection"
 import { MediaCoverage } from "../components/sections/MediaCoverage";
 
 export const Home = () => {
+  useSeo(pageSeo.home);
   return (
     <>
       <HeroSection />

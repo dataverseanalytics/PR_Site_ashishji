@@ -6,6 +6,7 @@ import { Services } from "./pages/Services";
 import { Sectors } from "./pages/Sectors";
 import { MediaCoverage } from "./pages/MediaCoverage";
 import { Contact } from "./pages/Contact";
+import { NotFound } from "./pages/NotFound";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="sectors" element={<Sectors />} />
           <Route path="media-coverage" element={<MediaCoverage />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

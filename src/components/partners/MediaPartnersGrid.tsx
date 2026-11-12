@@ -6,9 +6,9 @@ export const MediaPartnersGrid = () => {
     <EditorialSection className="bg-dark-navy border-y border-white/5">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-16 gap-y-8 mb-16 items-end">
         <div className="lg:col-span-7">
-          <h2 className="font-serif text-white text-[clamp(1.9rem,3.4vw,2.9rem)] leading-[1.15] tracking-[-0.015em] text-balance">
+          <h1 className="font-serif text-white text-[clamp(1.9rem,3.4vw,2.9rem)] leading-[1.15] tracking-[-0.015em] text-balance">
             The mastheads that carry our clients&rsquo; stories.
-          </h2>
+          </h1>
         </div>
         <p className="lg:col-span-5 text-muted-white/75 leading-[1.8] font-light max-w-[48ch]">
           Print, digital, broadcast and wire — national dailies, business press, regional

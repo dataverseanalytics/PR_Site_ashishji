@@ -1,12 +1,88 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Home-page defaults. Each page replaces these as visitors navigate (src/hooks/useSeo.ts). -->
+    <title>Ask For PR | PR Agency in Ahmedabad, Gujarat</title>
+    <meta name="description" content="Ask For PR is a public relations agency in Ahmedabad, Gujarat offering media relations, press release distribution, crisis management, event PR and digital PR for brands across India." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://askforpr.com/" />
+    <meta name="theme-color" content="#0A1B3D" />
+
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="apple-touch-icon" href="/favicon-192.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AskForPR | National Public Relations Agency</title>
+
+    <!-- Link previews (WhatsApp, LinkedIn, Facebook, X) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ask For PR" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content="Ask For PR | PR Agency in Ahmedabad, Gujarat" />
+    <meta property="og:description" content="Ask For PR is a public relations agency in Ahmedabad, Gujarat offering media relations, press release distribution, crisis management, event PR and digital PR for brands across India." />
+    <meta property="og:url" content="https://askforpr.com/" />
+    <meta property="og:image" content="https://askforpr.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Ask For PR — Because Silence Isn't Strategy" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ask For PR | PR Agency in Ahmedabad, Gujarat" />
+    <meta name="twitter:description" content="Ask For PR is a public relations agency in Ahmedabad, Gujarat offering media relations, press release distribution, crisis management, event PR and digital PR for brands across India." />
+    <meta name="twitter:image" content="https://askforpr.com/og-image.png" />
+
+    <!-- Structured data: tells search and AI engines who the business is. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://askforpr.com/#organization",
+            "name": "Ask For PR",
+            "alternateName": "AskForPR",
+            "slogan": "Because Silence Isn't Strategy",
+            "description": "Public relations agency in Ahmedabad, Gujarat offering media relations, press release distribution, crisis management, event PR, digital PR and brand reputation management.",
+            "url": "https://askforpr.com/",
+            "logo": "https://askforpr.com/favicon-512.png",
+            "image": "https://askforpr.com/og-image.png",
+            "telephone": "+91-91161-80227",
+            "email": "hello@askforpr.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Ahmedabad",
+              "addressRegion": "Gujarat",
+              "addressCountry": "IN"
+            },
+            "areaServed": { "@type": "Country", "name": "India" },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-91161-80227",
+              "email": "hello@askforpr.com",
+              "contactType": "customer service",
+              "areaServed": "IN"
+            },
+            "knowsAbout": [
+              "Public Relations",
+              "Media Relations",
+              "Press Release Distribution",
+              "Crisis Management",
+              "Event PR",
+              "Digital PR",
+              "Brand Reputation Management"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://askforpr.com/#website",
+            "url": "https://askforpr.com/",
+            "name": "Ask For PR",
+            "publisher": { "@id": "https://askforpr.com/#organization" },
+            "inLanguage": "en-IN"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

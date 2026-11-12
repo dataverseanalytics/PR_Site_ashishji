@@ -7,7 +7,9 @@ export const AboutSnippet = () => {
     <section className="py-24 bg-deep-navy relative overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <img
+          loading="lazy"
+          decoding="async"
           src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1920&auto=format&fit=crop" 
           alt="Office Background" 
           className="absolute inset-0 w-full h-full object-cover object-center opacity-15"
@@ -51,7 +53,9 @@ export const AboutSnippet = () => {
             <div className="absolute inset-0 bg-gold/5 blur-3xl -z-10 rounded-full"></div>
             <div className="relative rounded-lg overflow-hidden border border-white/5 shadow-2xl group">
               <div className="absolute inset-0 bg-navy-blue/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-              <img 
+              <img
+                loading="lazy"
+                decoding="async"
                 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=75&w=1000&h=750&fit=crop&auto=format" 
                 alt="Communications team working together around a table" 
                 className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"

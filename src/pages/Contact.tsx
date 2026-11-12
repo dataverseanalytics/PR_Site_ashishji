@@ -1,3 +1,5 @@
+import { useSeo } from "../hooks/useSeo";
+import { pageSeo } from "../config/seo";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -13,6 +15,7 @@ import {
 } from "../config/contact";
 
 export const Contact = () => {
+  useSeo(pageSeo.contact);
   const [formState, setFormState] = useState({
     name: "",
     email: "",

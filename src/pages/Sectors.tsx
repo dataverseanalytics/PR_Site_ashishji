@@ -1,8 +1,11 @@
+import { useSeo } from "../hooks/useSeo";
+import { pageSeo } from "../config/seo";
 import { SectorsHero } from "../components/sectors/SectorsHero";
 import { SectorsGrid } from "../components/sectors/SectorsGrid";
 import { EditorialCTA } from "../components/ui/EditorialCTA";
 
 export const Sectors = () => {
+  useSeo(pageSeo.sectors);
   return (
     <div className="bg-deep-navy min-h-screen">
       <SectorsHero />

@@ -44,7 +44,9 @@ export const StatsSection = () => {
     <section className="bg-dark-navy py-20 border-y border-white/5 relative z-20 overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <img
+          loading="lazy"
+          decoding="async"
           src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1920&auto=format&fit=crop" 
           alt="Data and Stats Background" 
           className="absolute inset-0 w-full h-full object-cover object-center opacity-15"
