@@ -100,12 +100,9 @@ export const HeroSection = () => {
           >
             <div className="relative w-full max-w-[500px] flex items-center justify-center p-8">
               <img 
-                src="/askforpr_logo_white_reversed.svg" 
-                alt="AskForPR Large Logo" 
+                src="/ask_for_pr_logo_reverse.svg"
+                alt="Ask For PR"
                 className="w-full h-auto drop-shadow-2xl"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = "/askforpr_logo_color.svg";
-                }}
               />
             </div>
           </motion.div>

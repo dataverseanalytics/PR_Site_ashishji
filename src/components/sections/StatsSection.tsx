@@ -3,10 +3,10 @@ import { useEffect, useState, useRef } from "react";
 import { useInView } from "framer-motion";
 
 const stats = [
-  { value: 10, suffix: "+", label: "Years of Experience" },
-  { value: 5000, suffix: "+", label: "Media Connections" },
-  { value: 200, suffix: "+", label: "Happy Clients" },
-  { value: 1000, suffix: "+", label: "Successful Campaigns" },
+  { value: 9, suffix: "+", label: "Years of Experience" },
+  { value: 1000, suffix: "+", label: "Media Connections" },
+  { value: 350, suffix: "+", label: "Happy Customers" },
+  { value: 500, suffix: "+", label: "Successful Campaigns" },
 ];
 
 const Counter = ({ from = 0, to, duration = 2 }: { from?: number, to: number, duration?: number }) => {

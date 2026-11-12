@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="560" viewBox="0 0 1900 560"><g transform="translate(55 52)">
+        <path d="M20 455 L175 35 L300 35 L485 455 L365 455 L238 150 L130 455 Z" fill="#FFFFFF"/>
+        <path d="M110 305 L365 305 L405 385 L80 385 Z" fill="#FFFFFF"/>
+        <path d="M0 475 C110 300 265 175 500 145 C340 195 180 320 95 475 Z" fill="#D9A12E"/>
+        </g>
+        <path d="M610 65 V490" stroke="#D9A12E" stroke-width="3"/>
+        <text x="680" y="310" font-family="DejaVu Sans, Arial, sans-serif" font-size="180" font-weight="700" letter-spacing="-6" fill="#FFFFFF">Ask For</text>
+        <text x="1510" y="310" font-family="DejaVu Sans, Arial, sans-serif" font-size="180" font-weight="700" letter-spacing="-6" fill="#D9A12E">PR</text><text x="690" y="405" font-family="DejaVu Sans, Arial, sans-serif" font-size="53" font-style="italic" letter-spacing="4" fill="#FFFFFF">Because Silence Isn't Strategy</text>
+            <path d="M690 455 Q1270 520 1840 455" fill="none" stroke="#D9A12E" stroke-width="8" stroke-linecap="round"/></svg>

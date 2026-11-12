@@ -13,12 +13,9 @@ export const Footer = () => {
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center mb-6">
               <img 
-                src="/askforpr_logo_white_reversed.svg" 
-                alt="AskForPR Logo" 
-                className="h-32 md:h-40 w-auto object-contain transform -translate-x-6 scale-125 md:scale-150 origin-left"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = "/askforpr_logo_color.svg";
-                }}
+                src="/ask_for_pr_logo_reverse.svg"
+                alt="Ask For PR"
+                className="h-16 md:h-20 w-auto object-contain"
               />
             </Link>
             <p className="text-muted-white max-w-sm mb-6">
@@ -62,7 +59,7 @@ export const Footer = () => {
           <div>
             <h4 className="text-white font-serif text-lg mb-6">Quick Links</h4>
             <ul className="flex flex-col gap-3">
-              {["Home", "About Us", "Services", "Case Studies", "Blog", "Contact Us"].map((link) => (
+              {["Home", "About Us", "Services", "Contact Us"].map((link) => (
                 <li key={link}>
                   <Link
                     to={link === "Home" ? "/" : `/${link.toLowerCase().replace(" ", "-")}`}

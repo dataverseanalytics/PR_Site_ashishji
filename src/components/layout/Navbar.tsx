@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import { PHONE_TEL, PHONE_DISPLAY, whatsappLink } from "../../config/contact";
+import { whatsappLink } from "../../config/contact";
 import { Button } from "../ui/Button";
 import { cn } from "../../utils/cn";
 import { motion, AnimatePresence } from "framer-motion";
@@ -11,9 +11,7 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
   { name: "Services", path: "/services" },
-  { name: "Case Studies", path: "/case-studies" },
   { name: "Media Coverage", path: "/media-coverage" },
-  { name: "Blog", path: "/blog" },
   { name: "Contact Us", path: "/contact" },
 ];
 
@@ -49,12 +47,9 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center relative z-50">
             <img 
-              src="/askforpr_logo_white_reversed.svg" 
-              alt="AskForPR Logo" 
-              className="h-16 md:h-20 w-auto object-contain transform -translate-x-2 scale-110 origin-left"
-              onError={(e) => {
-                (e.target as HTMLImageElement).src = "/askforpr_logo_color.svg";
-              }}
+              src="/ask_for_pr_logo_reverse.svg"
+              alt="Ask For PR"
+              className="h-12 md:h-14 w-auto object-contain"
             />
           </Link>
 
@@ -78,13 +73,6 @@ export const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden xl:flex items-center gap-5">
-            <a
-              href={`tel:${PHONE_TEL}`}
-              className="flex items-center gap-2 text-sm font-medium text-muted-white hover:text-gold transition-colors whitespace-nowrap"
-            >
-              <Phone size={16} className="text-gold shrink-0" aria-hidden="true" />
-              {PHONE_DISPLAY}
-            </a>
             <Link to="/contact">
               <Button variant="primary" size="sm">Get in Touch</Button>
             </Link>
@@ -138,13 +126,6 @@ export const Navbar = () => {
                 >
                   <FaWhatsapp size={22} aria-hidden="true" />
                   WhatsApp us
-                </a>
-                <a
-                  href={`tel:${PHONE_TEL}`}
-                  className="flex items-center justify-center gap-3 w-full h-14 rounded-sm border border-white/15 text-muted-white hover:text-gold hover:border-gold/50 transition-colors font-medium"
-                >
-                  <Phone size={18} className="shrink-0" aria-hidden="true" />
-                  {PHONE_DISPLAY}
                 </a>
               </div>
             </nav>

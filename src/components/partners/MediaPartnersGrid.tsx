@@ -1,4 +1,4 @@
-import { EditorialSection, Reveal, SectionLabel } from "../ui/Editorial";
+import { EditorialSection, Reveal } from "../ui/Editorial";
 import { mediaPartners } from "./mediaPartnersData";
 
 export const MediaPartnersGrid = () => {
@@ -6,7 +6,6 @@ export const MediaPartnersGrid = () => {
     <EditorialSection className="bg-dark-navy border-y border-white/5">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-16 gap-y-8 mb-16 items-end">
         <div className="lg:col-span-7">
-          <SectionLabel index="01" label="The Network" className="mb-10 max-w-sm" />
           <h2 className="font-serif text-white text-[clamp(1.9rem,3.4vw,2.9rem)] leading-[1.15] tracking-[-0.015em] text-balance">
             The mastheads that carry our clients&rsquo; stories.
           </h2>

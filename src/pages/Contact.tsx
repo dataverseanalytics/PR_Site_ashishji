@@ -102,7 +102,7 @@ export const Contact = () => {
                     rel="noopener noreferrer"
                     className="text-muted-white/80 hover:text-gold transition-colors"
                   >
-                    Message us on {PHONE_DISPLAY}
+                    {PHONE_DISPLAY}
                   </a>
                 </div>
               </div>
@@ -129,7 +129,7 @@ export const Contact = () => {
                 <div>
                   <h4 className="text-white font-serif mb-1">Office Address</h4>
                   <p className="text-muted-white/80 max-w-[250px]">
-                    123 Business Avenue, Corporate Hub, Mumbai, India
+                    Ahmedabad, Gujarat
                   </p>
                 </div>
               </div>
