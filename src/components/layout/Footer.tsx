@@ -15,8 +15,8 @@ export const Footer = () => {
               <img
                 loading="lazy"
                 decoding="async"
-                src="/ask_for_pr_logo_reverse.svg"
-                alt="Ask For PR"
+                src="/askforpr-logo-reverse.svg"
+                alt="AskForPR"
                 className="h-16 md:h-20 w-auto object-contain"
               />
             </Link>

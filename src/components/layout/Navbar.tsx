@@ -47,8 +47,8 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center relative z-50">
             <img 
-              src="/ask_for_pr_logo_reverse.svg"
-              alt="Ask For PR"
+              src="/askforpr-logo-reverse.svg"
+              alt="AskForPR"
               className="h-12 md:h-14 w-auto object-contain"
             />
           </Link>

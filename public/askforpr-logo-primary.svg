@@ -4,6 +4,5 @@
         <path d="M0 475 C110 300 265 175 500 145 C340 195 180 320 95 475 Z" fill="#D9A12E"/>
         </g>
         <path d="M610 65 V490" stroke="#D9A12E" stroke-width="3"/>
-        <text x="680" y="310" font-family="DejaVu Sans, Arial, sans-serif" font-size="180" font-weight="700" letter-spacing="-6" fill="#102B63">Ask For</text>
-        <text x="1510" y="310" font-family="DejaVu Sans, Arial, sans-serif" font-size="180" font-weight="700" letter-spacing="-6" fill="#D9A12E">PR</text><text x="690" y="405" font-family="DejaVu Sans, Arial, sans-serif" font-size="53" font-style="italic" letter-spacing="4" fill="#102B63">Because Silence Isn't Strategy</text>
+        <text x="680" y="310" font-family="DejaVu Sans, Arial, sans-serif" font-size="180" font-weight="700" letter-spacing="-6" fill="#102B63">AskFor<tspan fill="#D9A12E">PR</tspan></text><text x="690" y="405" font-family="DejaVu Sans, Arial, sans-serif" font-size="53" font-style="italic" letter-spacing="4" fill="#102B63">Because Silence Isn't Strategy</text>
             <path d="M690 455 Q1270 520 1840 455" fill="none" stroke="#D9A12E" stroke-width="8" stroke-linecap="round"/></svg>
